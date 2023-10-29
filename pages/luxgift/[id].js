@@ -15,7 +15,7 @@ function Luxgift() {
     const [claimAmt,setClaimAmt] = useState(0);
     const { id } = router.query;
     const mounted = useIsMounted();
-    const provider = new ethers.providers.JsonRpcProvider('https://api.avax-test.network/ext/bc/C/rpc');
+    const provider = new ethers.providers.JsonRpcProvider('https://gwan-ssl.wandevs.org:46891');
     const contract = new ethers.Contract(LLGIFTCONTRACT,LLGIFTABI,provider);
     useEffect(() => {
         if (mounted) {

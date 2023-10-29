@@ -9,7 +9,7 @@ import { useIsMounted } from '../hooks/useIsMounted';
 function Nav() {
   const {isConnected,address} = useAccount();
   const mounted = useIsMounted();
-  const provider = new ethers.providers.JsonRpcProvider('https://api.avax-test.network/ext/bc/C/rpc');
+  const provider = new ethers.providers.JsonRpcProvider('https://gwan-ssl.wandevs.org:46891');
   const contract = new ethers.Contract(LLGIFTCONTRACT,LLGIFTABI,provider);
   const contractpub = new ethers.Contract(LLCONTRACT ,LLABI,provider);
   const [credits,setCredits] = useState(null)

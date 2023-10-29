@@ -7,7 +7,7 @@ import { useState,useEffect } from 'react';
 const Listingmain = () => {
     const [contract2,setcontract2]=useState(null);
     const [envelopes, setEnvelopes] = useState([]);
-    const provider = new ethers.providers.JsonRpcProvider('https://api.avax-test.network/ext/bc/C/rpc');
+    const provider = new ethers.providers.JsonRpcProvider('https://gwan-ssl.wandevs.org:46891');
     const contract = new ethers.Contract(LLCONTRACT ,LLABI,provider);
 
     const fetchEnvelopes = async () => {

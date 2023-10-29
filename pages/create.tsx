@@ -15,7 +15,7 @@ const Form = () => {
  const [entryfee,setentryfee]= useState(null);
 
 
-//     const provider = new ethers.providers.JsonRpcProvider('https://api.avax-test.network/ext/bc/C/rpc');
+//     const provider = new ethers.providers.JsonRpcProvider('https://gwan-ssl.wandevs.org:46891');
 //     const signer = provider.getSigner();
 // //   @ts-ignore
 // const contract = new ethers.Contract(LLGIFTCONTRACT,LLGIFTABI,signer);
@@ -117,6 +117,7 @@ async function fetchConstant() {
 
       const tx = await contract2.createLottery(name,ethers.utils.parseEther(entryfee),valuetosend,{ value : valuetosend });
       console.log('Transaction successfull',tx.hash);
+      window.alert(`public lotto has been created`);
       }catch(err){
         console.log(err);
       }
@@ -149,7 +150,7 @@ async function fetchConstant() {
 </label>
 
         <div className='flex flex-col space-y-2'>
-          <h3 className='text-white'>Name Your Lux Gift</h3>
+          <h3 className='text-white'>Name Your Lux Gift/Lottery name</h3>
           <Input
             onChange={(e) => setName(e.target.value)}
             placeholder='Satoshi Nakamoto'
