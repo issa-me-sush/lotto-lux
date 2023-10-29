@@ -118,7 +118,7 @@ export const BMABI =
 	}
 ]
 
-export const LLCONTRACT = "0x16c24C660b7ca7F484b660A6761846Ac46347272"
+export const LLCONTRACT = "0x901303FC0a875B2B8149aBF82C79B56919FD61Ee"
 
 export const LLABI = 
 
@@ -468,7 +468,6 @@ export const LLABI =
 		"type": "function"
 	}
 ]
-
 export const LLGIFTCONTRACT = "0xB82a86bF08492515a0161E888ec24397783cbFb2"
 
 export const LLGIFTABI = 
