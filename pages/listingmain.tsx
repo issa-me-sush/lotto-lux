@@ -97,7 +97,7 @@ const Listingmain = () => {
       }
   return (
     <div>
-    <p className='text-[30px] text-center'>List of Envelopes</p>
+    <p className='text-[30px] text-center'>Lottos</p>
 
       <div className='mainlisting'>
 
@@ -110,10 +110,10 @@ const Listingmain = () => {
             <p className='text-[40px] text-center'>{envelope.name.toString()}</p>
                         {/* @ts-ignore */}
 
-            <h2>Base Bounty {ethers.utils.formatEther(envelope.potSize.toString())} Avax</h2>
+            <h2>Base Bounty {ethers.utils.formatEther(envelope.potSize.toString())} WAN</h2>
                         {/* @ts-ignore */}
 
-            <h2>Entry Fee {ethers.utils.formatEther(envelope.entryFee.toString())} Avax</h2>
+            <h2>Entry Fee {ethers.utils.formatEther(envelope.entryFee.toString())} WAN</h2>
             <div className='flex flex-col align-middle justify-center pt-5'>
                                                         {/* @ts-ignore */}
             <div className='pb-2'>

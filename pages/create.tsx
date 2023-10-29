@@ -205,7 +205,7 @@ async function fetchConstant() {
           <div >
             <h3 className='text-white'>Enter the entry fees</h3>
           {/* @ts-ignore */}
-          <input placeholder="1 avax" className='p-2 border rounded flex-grow text-black mt-3' onChange={(e)=>{setentryfee(e.target.value)}}></input>
+          <input placeholder="1 WAN" className='p-2 border rounded flex-grow text-black mt-3' onChange={(e)=>{setentryfee(e.target.value)}}></input>
           </div>
         )} 
         <button className='p-2 bg-zinc-300 text-black rounded-xl m-32' onClick={(e)=>onSubmit(e)}> Submit</button>
