@@ -118,7 +118,7 @@ export const BMABI =
 	}
 ]
 
-export const LLCONTRACT = "0x106FBA120179F3B618C85E19bDc780d17f191eF8"
+export const LLCONTRACT = "0x16c24C660b7ca7F484b660A6761846Ac46347272"
 
 export const LLABI = 
 
