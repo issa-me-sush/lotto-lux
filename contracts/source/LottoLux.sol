@@ -66,7 +66,7 @@ contract LottoLux is BalanceManager {
 
             uint256 prize = calculatePrize(participant, lotteryId);
             lottery.winners[participant] = prize;
-
+            addToBalance(participant,prize);
             uint256 loyaltyPercentage = (prize * 100) / distributablePool;
             uint256 pointsToSubtract = (loyaltyPoints[participant] * loyaltyPercentage) / 100;
             loyaltyPoints[participant] -= pointsToSubtract;
