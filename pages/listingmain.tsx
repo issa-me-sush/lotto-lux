@@ -89,7 +89,9 @@ const Listingmain = () => {
         e.preventDefault();
         try{
                    //   @ts-ignore 
-        contract2.distributePrizes(id)
+                   const tx = await  contract2.distributePrizes(id)
+                   console.log('Transaction successfull',tx.hash);
+                   window.alert(`rewards distributed`);
         }catch(error){
             alert("You are not authrouzied to Distribute this particular reward")
         }
