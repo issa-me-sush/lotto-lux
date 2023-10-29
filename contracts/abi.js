@@ -469,9 +469,9 @@ export const LLABI =
 	}
 ]
 
-export const PRIVENVCONTRACT = "0xB82a86bF08492515a0161E888ec24397783cbFb2"
+export const LLGIFTCONTRACT = "0xB82a86bF08492515a0161E888ec24397783cbFb2"
 
-export const PRIVENVABI = 
+export const LLGIFTABI = 
 
 [
 	{
