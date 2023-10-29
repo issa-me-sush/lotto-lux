@@ -123,7 +123,7 @@ const Listingmain = () => {
             </div>
                                                                     {/* @ts-ignore */}
 
-            <button className=' bg-red-500 text-white rounded-xl w-max  self-center p-[1rem]' onClick={(e)=>{distribute(e,envelope.id)}} >Distribute your Rewards from the Envelope</button>
+            <button className=' bg-red-500 text-white rounded-xl w-max  self-center p-[1rem]' onClick={(e)=>{distribute(e,envelope.id)}} >Distribute your Rewards from the Lottery Pool</button>
 
             </div>
 

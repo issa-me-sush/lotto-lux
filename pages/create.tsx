@@ -104,7 +104,7 @@ async function fetchConstant() {
          const currentid = await contract.currentEnvelopeId();
          console.log(currentid)
 //   @ts-ignore 
-         window.alert(`your envelope claim link for all the recipients: https://lottolux.vercel.app/privenvelopes/`+ parseInt( currentid._hex ,16 ));
+         window.alert(`your gift claim link for all the recipients: https://lottolux.vercel.app/privenvelopes/`+ parseInt( currentid._hex ,16 ));
       } catch (error) {
         console.error('Error:', error);
       }
