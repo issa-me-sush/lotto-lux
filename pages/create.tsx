@@ -115,7 +115,7 @@ async function fetchConstant() {
       const valuetosend = ethers.utils.parseEther(bounty);
               // @ts-ignore 
 
-      const tx = await contract2.createPublicEnvelope(name,ethers.utils.parseEther(entryfee),valuetosend,{ value : valuetosend });
+      const tx = await contract2.createLottery(name,ethers.utils.parseEther(entryfee),valuetosend,{ value : valuetosend });
       console.log('Transaction successfull',tx.hash);
       }catch(err){
         console.log(err);

@@ -15,7 +15,7 @@ const Listingmain = () => {
         
   
         // Call the getAllEnvelopes function
-        const result = await contract.getAllEnvelopes();
+        const result = await contract.getAllLotteries();
         console.log(result);
   
         // Unpack the result into arrays
@@ -76,7 +76,7 @@ const Listingmain = () => {
         try{
                           //   @ts-ignore 
 
-            await contract2.enterEnvelope(idnew, {value: fee});
+            await contract2.purchaseTicket(idnew, {value: fee});
         }catch(error){
             console.log(error);
         }
@@ -89,7 +89,7 @@ const Listingmain = () => {
         e.preventDefault();
         try{
                    //   @ts-ignore 
-        contract2.distributeRewards(id)
+        contract2.distributePrizes(id)
         }catch(error){
             alert("You are not authrouzied to Distribute this particular reward")
         }
