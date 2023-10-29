@@ -60,7 +60,7 @@ contract LottoLux is BalanceManager {
 
         uint256 totalFee = (lottery.prizePool * FEE_PERCENTAGE) / 100;
         uint256 distributablePool = lottery.prizePool - totalFee - lottery.creatorReward;
-
+        addToBalance(msg.sender,lottery.creatorReward);
         for (uint i = 0; i < lottery.participants.length; i++) {
             address participant = lottery.participants[i];
 
